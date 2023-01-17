@@ -1,7 +1,7 @@
 //6. crear controlador por cada vista, no olvidar exportar al final del codigo
 const controlador = {
     home: (req, res) =>{
-        res.send('Bienvenidos al home!!!!!!');
+        res.render('./home');
     },
 };
 
