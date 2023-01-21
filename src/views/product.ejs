@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include('./partial/head')%>
+<body>
+  <%- include('./partial/header')%>
+    <h1>Productos de mascotas</h1>
+    <form action="">
+      <label>Imagen:</label>
+      <input type="file" name="imagen" placeholder="Insertar url de la imagen">
+      <label>Nombre:</label>
+      <input type="text" name="nombre" placeholder="Nombre del producto">
+      <label>Descripción:</label>
+      <input type="text" name="descripcion" placeholder="Descripción del producto">
+      <label>Precio:</label>
+      <input type="text" name="precio" placeholder="Precio del producto">
+      <input type="submit" value="Agregar producto">
+  </form>
+    <%- include('./partial/footer')%>
+  </body>
+</html>

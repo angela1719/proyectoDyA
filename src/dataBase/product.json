@@ -1,0 +1,18 @@
+[
+  {
+    "id": 1,
+    "imagen": "/img/proplan-esterilizado.png",
+    "nombre": "perro",
+    "descripcion":"asda",
+    "precio": 89000
+    
+  },
+  {
+    "id": 2,
+    "imagen": "/img/proplan-perro-adulto.png",
+    "nombre": "gato",
+    "descripcion":"asda gato",
+    "precio": 160000
+    
+  }
+]
