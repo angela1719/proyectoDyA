@@ -29,8 +29,9 @@ app.listen(3000, () => {
 
 //8.en app.js requerir modulo router y aplicar app.use("/", router)
 app.use("/", router);
-app.use("/product", router);
+app.use("/detalle", router);
 app.use("/register", router);
+
 
 //9.hacer encarpetado,crear carpeta src y mover ahi lo siguiente:views,app.js,controllers, routs NOTA:no olvidar hacer cambio en package json poniendo las nuevas rutas "start": "nodemon ./src/app.js" y modificar las rutas si es necesario en app.js y router y por ultimo y muy importante volver a instalar las NPM para visualizar proyecto poniendo npm i o npm install.
 

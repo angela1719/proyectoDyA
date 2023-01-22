@@ -15,6 +15,22 @@
       <input type="text" name="precio" placeholder="Precio del producto">
       <input type="submit" value="Agregar producto">
   </form>
+  <table>
+    <tr>
+      <th>Imagen</th>
+      <th>Nombre</th>
+      <th>Descripción</th>
+      <th>Precio</th>
+    </tr>
+    <tr>
+      <% if(mascota) { %>
+      <td><img src=" <%= mascota.imagen%>" alt=" <%= mascota.nombre%>"></td>
+      <td><%= mascota.nombre%></td>
+      <td><%= mascota.descripcion%></td>
+      <td><%= mascota.precio%></td>
+      <% } %>
+    </tr>
+  </table>
     <%- include('./partial/footer')%>
   </body>
 </html>
