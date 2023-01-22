@@ -11,19 +11,16 @@
         <th>Descripción</th>
         <th>Precio</th>
       </tr>
-      <tr>
-        <td><img src="/img/proplan-perro-adulto.png" alt="Perro"></td>
-        <td>Perro Labrador Retriever</td>
-        <td>Un perro amigable y leal, ideal para familias con niños.</td>
-        <td>$500</td>
-      </tr>
-      <tr>
-        <td><img src="/img/proplan-esterilizado.png" alt="Gato"></td>
-        <td>Gato Siames</td>
-        <td>Un gato cariñoso y juguetón, con un pelaje espectacular.</td>
-        <td>$300</td>
-      </tr>
+      <% for (let i = 0; i < mascotas.length && i < 2; i++) { %>
+        <tr>
+          <td><img src="<%= mascotas[i].imagen %>" alt="<%= mascotas[i].nombre %>"></td>
+          <td><%= mascotas[i].nombre %></td>
+          <td><%= mascotas[i].descripcion %></td>
+          <td><%= mascotas[i].precio %></td>
+        </tr>
+      <% } %>
     </table>
+    
     <%- include('./partial/footer')%>
   </body>
 </html>
